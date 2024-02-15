@@ -1,0 +1,100 @@
+.sidebar {
+	background-color: white;
+	position: sticky;
+	margin-top: 0;
+	flex: .33;
+	padding: 30px 10px;
+	width: auto;
+}
+
+* {
+	font-family: 'Roboto', sans-serif;
+	text-decoration: none;
+}
+
+.sidebar_top {
+	display: flex;
+}
+
+.name {
+	font-size: 16px;
+	text-decoration: none;
+}
+
+.suscripciones {
+	margin-top: 30px;
+}
+
+.sidebar .icono {
+	width: 40px;
+	height: 40px;
+	margin-right: 20px;
+}
+
+.sidebar img {
+	height: 40px;
+}
+
+.titulo {
+	display: flex;
+	align-items: center;
+}
+
+
+.suscripto {
+	margin-top: 15px;
+	display: flex;
+	align-items: center;
+}
+
+.avatarSuscripcion {
+	border-radius: 50%;
+	display: inline;
+}
+
+.nombreSuscripcion {
+	display: inline;
+	margin-left: 20px;
+}
+
+.app__body {
+	overflow-x: hidden;
+  }
+  
+  .sidebar {
+	min-height: 100vh;
+	margin-left: -15rem;
+	transition: margin 0.25s ease-out;
+  }
+  
+  .sidebar .sidebar-heading {
+	padding: 0.875rem 1.25rem;
+	font-size: 1.2rem;
+  }
+  
+  .sidebar .list-group {
+	width: 15rem;
+  }
+  
+  .feed {
+	min-width: 100vw;
+  }
+  
+  body.sb-sidenav-toggled .app__body .sidebar {
+	margin-left: 0;
+  }
+  
+  @media (min-width: 768px) {
+	.sidebar {
+	  margin-left: 0;
+	}
+  
+	.feed {
+	  min-width: 0;
+	  width: 100%;
+	}
+  
+	body.sb-sidenav-toggled .app__body .sidebar {
+	  margin-left: -15rem;
+	}
+  }

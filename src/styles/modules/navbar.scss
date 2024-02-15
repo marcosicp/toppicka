@@ -1,0 +1,66 @@
+@import '../mixins';
+@import '../vars';
+
+.navbar {
+   position: relative;
+   z-index: 10;
+
+   padding-right: rem(10);
+
+   text-align: right;
+
+   background-color: $sea-green;
+   box-shadow: 0 rem(10) rem(20) rgba(0,0,0,.19), 0 rem(6) rem(6) rgba(0,0,0,.23);
+
+   &__button {
+      font-size: rem(20);
+      font-weight: bold;
+      line-height: rem(50);
+
+      display: inline-block;
+
+      height: rem(50);
+      margin: rem(10);
+      padding: 0 rem(10);
+
+      transition: box-shadow 300ms ease-in-out;
+      vertical-align: middle;
+
+      color: #000;
+      border-radius: rem(50);
+      background: linear-gradient(145deg, #76a998, #8cc9b5);
+      box-shadow: rem(7) rem(7) rem(14) #699687,
+      rem(-7) rem(-7) rem(14) #9de2cb;
+
+      &_pressed {
+         cursor: default;
+
+         background: #83bca9;
+         box-shadow: inset rem(7) rem(7) rem(14) #5e877a,
+         inset rem(-7) rem(-7) rem(14) #a8f1d8;
+      }
+   }
+
+   &__img {
+      height: rem(35);
+
+      vertical-align: middle;
+   }
+}
+
+
+@media screen and (max-width: 768px) {
+   .navbar {
+      &__button {
+         font-size: rem(18);
+         line-height: rem(40);
+
+         height: rem(40);
+         margin: rem(5);
+      }
+
+      &__img {
+         height: rem(25);
+      }
+   }
+}

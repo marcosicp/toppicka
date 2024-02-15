@@ -1,0 +1,84 @@
+@import '../mixins';
+@import '../vars';
+
+
+.message-form-sign-in {
+   font-size: rem(20);
+
+   margin-bottom: rem(30);
+
+   cursor: default;
+   text-align: center;
+
+   a {
+      color: #000;
+   }
+}
+
+.message-form {
+   position: relative;
+
+   margin-bottom: rem(30);
+
+   &_closed {
+      .message-form__text {
+         line-height: rem(30);
+
+         height: rem(50);
+      }
+      .message-form__submit {
+         opacity: 0;
+      }
+   }
+
+   &__text {
+      line-height: auto;
+
+      overflow: hidden;
+
+      width: 100%;
+      height: rem(200);
+      padding: rem(10);
+
+      resize: none;
+      transition: all .3s cubic-bezier(.25,.8,.25,1);
+
+      border: rem(2) solid #b9b9b9;
+      border-radius: rem(10);
+      outline: none;
+
+      &:focus {
+         border-color: $red-brown;
+      }
+   }
+
+   &__submit {
+      position: absolute;
+      right: rem(30);
+      bottom: rem(-26);
+
+      height: rem(30);
+      padding: rem(5) rem(10);
+
+      transition: all .3s cubic-bezier(.25,.8,.25,1);
+      transform: rotateX(15deg);
+
+      border: rem(2) solid #b9b9b9;
+      border-top: none;
+      border-bottom-right-radius: rem(3);
+      border-bottom-left-radius: rem(3);
+      outline: none;
+      background-color: transparent;
+      box-shadow: 0 rem(3) rem(6) rgba(0,0,0,.16), 0 rem(3) rem(6) rgba(0,0,0,.23);
+
+      &:disabled,
+      &:active {
+         transform: none;
+
+         box-shadow: 0 1px rem(3) rgba(0,0,0,.12), 0 1px rem(2);
+      }
+      &:focus {
+         border-color: $red-brown;
+      }
+   }
+}

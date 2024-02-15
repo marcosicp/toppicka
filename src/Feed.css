@@ -1,0 +1,13 @@
+.feed {
+	flex: 4;
+	padding: 30px 150px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	max-width: 70%;
+	margin: 0 auto;
+}
+* {
+	font-family: 'Poppins', sans-serif;
+}

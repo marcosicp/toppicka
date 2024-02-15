@@ -1,0 +1,92 @@
+@import '../mixins';
+@import '../vars';
+
+.message {
+   margin-bottom: rem(10);
+
+   &__author {
+      font-weight: bold;
+      line-height: rem(20);
+
+      display: inline-block;
+
+      cursor: default;
+
+      color: $blue;
+   }
+
+   &__created {
+      font-size: rem(12);
+      font-weight: bold;
+      line-height: rem(20);
+
+      display: inline-block;
+
+      margin-left: rem(10);
+
+      cursor: default;
+      vertical-align: middle;
+
+      color: #989898;
+   }
+
+   &__text {
+      margin-bottom: rem(10);
+
+      p {
+         line-height: rem(20);
+
+         margin: rem(5) 0;
+
+         color: #2a2e2e;
+
+         &:first-child {
+            margin-top: rem(5);
+         }
+      }
+   }
+
+   &__like {
+      line-height: rem(20);
+
+      height: rem(20);
+      padding: 0 rem(10);
+
+      cursor: pointer;
+      vertical-align: top;
+
+      border: none;
+      outline: none;
+      background-color: transparent;
+
+      img {
+         width: rem(20);
+      }
+   }
+
+   &__likes-count {
+      font-size: rem(12);
+
+      margin-left: rem(3);
+
+      vertical-align: top;
+   }
+
+   &__reply {
+      font-size: rem(13);
+      font-weight: bold;
+      line-height: rem(20);
+
+      height: rem(20);
+      margin-bottom: rem(10);
+      padding: 0 rem(5);
+
+      cursor: pointer;
+      text-decoration: underline;
+
+      color: #747474;
+      border: none;
+      outline: none;
+      background-color: transparent;
+   }
+}
